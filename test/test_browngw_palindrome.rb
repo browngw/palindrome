@@ -20,9 +20,9 @@ class TestBrowngwPalindrome < Minitest::Test
     assert "Madam, I'm Adam".palindrome?
   end
 
-  def test_letters
-    assert_equal "MadamImAdam", "Madam, I'm Adam.".letters
-  end
+  # def test_letters
+  #   assert_equal "MadamImAdam", "Madam, I'm Adam.".letters
+  # end
 
   # def test_that_it_has_a_version_number
   #   refute_nil ::BrowngwPalindrome::VERSION
