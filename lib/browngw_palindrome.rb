@@ -7,7 +7,12 @@ module BrowngwPalindrome
 
   # Returns true for palindrome, false otherwise
   def palindrome?
-    processed_content == processed_content.reverse
+    if processed_content.length == 0
+      false
+    else
+      processed_content == processed_content.reverse  
+    end
+    
   end
 
   # Returns the letters in the string

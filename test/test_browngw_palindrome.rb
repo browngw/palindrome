@@ -28,6 +28,14 @@ class TestBrowngwPalindrome < Minitest::Test
     assert 12321.palindrome?
   end
 
+  def test_empty_non_palindrome
+    assert !"".palindrome?
+  end
+
+  def test_multiple_spaces_non_palindrome
+    assert !"   ".palindrome?
+  end
+
   # def test_letters
   #   assert_equal "MadamImAdam", "Madam, I'm Adam.".letters
   # end
