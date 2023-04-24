@@ -3,7 +3,7 @@
 # require_relative "browngw_palindrome/version"
 require "browngw_palindrome/version"
 
-class String
+module BrowngwPalindrome
 
   # Returns true for palindrome, false otherwise
   def palindrome?
@@ -19,7 +19,15 @@ class String
 
     # Returns content for palindrome testing
     def processed_content
-      scan(/[a-z]/i).join.to_s.downcase
+      to_s.scan(/[a-z0-9]/i).join.downcase
     end
 
+end
+
+class String
+  include BrowngwPalindrome
+end
+
+class Integer
+  include BrowngwPalindrome
 end
